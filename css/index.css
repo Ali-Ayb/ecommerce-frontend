@@ -112,3 +112,9 @@ a {
 .row-products{
   display: flex;
   }
+.product{
+  margin: 20px;
+  background-color: white;
+  border: black 5px solid;
+
+}
