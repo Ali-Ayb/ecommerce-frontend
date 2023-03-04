@@ -99,7 +99,10 @@ a {
   margin-left: 10px
 }
 
-/* navbar style  */
+/* navbar style - Hussein Turfah  */
 
-
+.main-product-container{
+  display: flex;
+  flex-direction: column;
+}
 
