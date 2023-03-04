@@ -81,14 +81,25 @@ a {
   text-align: left;
 }
 
-.login-btn {
-  padding: 10px;
+.login-btn, .register-btn {
+  padding: 10px 20px;
   background-color: #655dbb;
   border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  
+}
+
+.login-btn:hover,
+.register-btn:hover {
+    background: #e9eefb;
 }
 
 .register-btn {
-  padding: 10px;
-  background-color: #655dbb;
-  border: none;
+  margin-left: 10px
 }
+
+/* navbar style  */
+
+
+
