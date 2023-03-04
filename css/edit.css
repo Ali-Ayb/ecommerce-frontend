@@ -1,0 +1,50 @@
+
+.main{
+    padding: 50px 100px;
+
+}
+
+.double__input {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.haf__line__input {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    width: 30%;
+}
+
+.haf__line__input label {
+    text-align: start;
+    width: 100%;
+    margin-bottom: 2px;
+}
+.haf__line__input input {
+    width: 100%;
+}
+
+
+@media (max-width: 850px) {
+    .main {
+        padding: 30px 60px;
+    }
+    .double__input {
+        flex-direction: column;
+    }
+    .haf__line__input {
+        margin-top: 1rem;
+        width: 70%;
+    }
+}
+@media (max-width: 550px) {
+   
+    .haf__line__input {
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
