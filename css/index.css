@@ -116,6 +116,17 @@ a {
   .shopping-count{
     display: none;
   }
+  .shopping-window {
+    background: #bface2;
+    border: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shopping-window :hover {
+    background: #655dbb ;
+    border-radius: 30%;
+  }
   .cart {
     padding: 2%;
   }
