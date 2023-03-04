@@ -1,3 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #e9eefb;
+  font-family: 'Poppins', sans-serif;
 }
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  background-color: #BFACE2;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 2%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo h1 {
+  color: #E1B452;
+}
+.logo span {
+  color: #3E54AC;
+}
+
+.menu {
+  width: 90%;
+}
+
+.cart {
+  width: 15%;
+}
+
+.menu ul li{
+  list-style-type: none;
+  display: inline-block;
+  font-size: larger;
+  padding-right: 5%;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.shopping-window {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: #666;
+  font-size: 16px;
+  line-height: 36px;
+  width: 100%;
+  max-width: 250px;
+  border: 1px solid #0e0d0d;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.cart-image{
+  width: 30px;
+  height: 30px;
+}
+
+.shopping-cart {
+  text-align: left;
+}
+
