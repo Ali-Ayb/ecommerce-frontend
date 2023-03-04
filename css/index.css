@@ -109,3 +109,6 @@ a {
   display: flex;
   flex-direction: column;
 }
+.row-products{
+  display: flex;
+  }
