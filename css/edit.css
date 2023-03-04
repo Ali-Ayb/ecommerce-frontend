@@ -93,6 +93,17 @@ label{
         width: 80%;
     }
 }
+
+.buttons {
+    margin-top:  3rem;
+
+}
+.buttons button {
+    margin-right: 1rem;
+    width: 5rem;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
 @media (max-width: 550px) {
    
     .haf__line__input {
