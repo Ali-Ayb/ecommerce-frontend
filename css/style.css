@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,14 +6,14 @@
 
 body {
   background-color: #e9eefb;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .header-container {
   display: flex;
   flex-direction: column;
   padding: 3%;
-  background-color: #BFACE2;
+  background-color: #bface2;
 }
 
 .navbar {
@@ -30,10 +30,10 @@ body {
 }
 
 .logo h1 {
-  color: #E1B452;
+  color: #e1b452;
 }
 .logo span {
-  color: #3E54AC;
+  color: #3e54ac;
 }
 
 .menu {
@@ -44,14 +44,14 @@ body {
   width: 15%;
 }
 
-.menu ul li{
+.menu ul li {
   list-style-type: none;
   display: inline-block;
   font-size: larger;
   padding-right: 5%;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
@@ -72,7 +72,7 @@ a{
   background-color: #fff;
 }
 
-.cart-image{
+.cart-image {
   width: 30px;
   height: 30px;
 }
@@ -81,3 +81,14 @@ a{
   text-align: left;
 }
 
+.login-btn {
+  padding: 10px;
+  background-color: #655dbb;
+  border: none;
+}
+
+.register-btn {
+  padding: 10px;
+  background-color: #655dbb;
+  border: none;
+}
