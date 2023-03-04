@@ -6,15 +6,13 @@
 }
 
 .check__cart {
-  width: 55%;
+  width: 50%;
   border: 1px solid #000;
-  height: 20rem;
   padding: 5px;
 }
 
 .to__checkout {
-  width: 45%;
-  height: 20rem;
+  width: 50%;
 }
 
 .check__cart hr {
@@ -33,5 +31,48 @@
 }
 
 .check__product {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.check__product img {
+    width: 30%;
+    margin-right: 10px;    
+}
+
+  .check__product__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+
+  }
+
+.check__product__info p {
+    font-weight: 200;
+    font-size: 13px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.buttons button {
+  margin-right: 20px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  
+}
+
+.check__product__info h6 {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 200;
+}
+
+.to__checkout {
+  
 }
