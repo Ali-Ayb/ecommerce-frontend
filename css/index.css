@@ -126,7 +126,22 @@ a {
 }
 
 
-/* navbar style  */
+/* navbar style - Hussein Turfah  */
 
+.main-product-container{
+  display: flex;
+  flex-direction: column;
+}
+.sub-product-container{
+  display: flex;
+  flex-direction: column;
+}
+.row-products{
+  display: flex;
+  }
+.product{
+  margin: 20px;
+  background-color: white;
+  border: black 5px solid;
 
-
+}
