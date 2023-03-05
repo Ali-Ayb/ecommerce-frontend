@@ -1,67 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="../css/cart-page.css">
+    <link rel="stylesheet" href="../css/cart-page.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart</title>
   </head>
   <body>
+    <header>
+      <div class="header-container">
+        <div class="navbar">
+          <div class="title_name">
+            <a href="" class="logo">
+              <h1>TECHNOLAB</h1>
+            </a>
+          </div>
+          <div class="log_reg">
+            <button class="login-btn">Login</button>
+            <button class="register-btn">Register</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="menu">
+            <ul id="MenuItems">
+              <li class="products"><a href="#">Home</a></li>
+              <li class="products"><a href="#">Computers</a></li>
+              <li class="products"><a href="#">Keyboards</a></li>
+              <li class="products"><a href="#">Mouse Computer</a></li>
+              <li class="products"><a href="#">Monitors</a></li>
+              <li class="products"><a href="#">CPU</a></li>
+              <li class="products"><a href="#">RAM</a></li>
+            </ul>
+          </div>
+          <div class="cart">
+            <a href="pages/cart-page.html" class="shopping-window">
+              <img src="../images/cart.png" class="cart-image" />
+              <div class="shopping-cart">Cart</div>
+              <div class="shopping-count">0</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <div class="main">
       <div class="check__cart">
-            <h5>Product(s)</h5>
-            <hr>
-            <div class="check__product">
-              <img src="https://macrotronics.net/images/razer-gaming-mouse-bungee-v3-rc21-01560100-r3u1-thumb.jpg" alt="">
-              <div class="check__product__info">
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                  molestiae quas </p>
-                <div class="buttons">
-                  <button> 1 </button>
-                  <button> update </button>
-                  <button> x </button>
-
-                </div>
-                <h6>$119.00</h6>
-              </div>
+        <h5>Product(s)</h5>
+        <hr />
+        <div class="check__product">
+          <img
+            src="https://macrotronics.net/images/razer-gaming-mouse-bungee-v3-rc21-01560100-r3u1-thumb.jpg"
+            alt=""
+          />
+          <div class="check__product__info">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, molestiae quas
+            </p>
+            <div class="buttons">
+              <input  type="number" value="1">
+              <button class="update">update</button>
+              <button class="delete">x</button>
             </div>
-            <hr>
-            <div class="check__product">
-              <img src="https://macrotronics.net/images/razer-gaming-mouse-bungee-v3-rc21-01560100-r3u1-thumb.jpg" alt="">
-              <div class="check__product__info">
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                  molestiae quas </p>
-                <div class="buttons">
-                  <button> 1 </button>
-                  <button> update </button>
-                  <button> x </button>
-
-                </div>
-                <h6>$119.00</h6>
-              </div>
+            <h6>$119.00</h6>
+          </div>
+        </div>
+        <hr />
+        <div class="check__product">
+          <img
+            src="https://macrotronics.net/images/razer-gaming-mouse-bungee-v3-rc21-01560100-r3u1-thumb.jpg"
+            alt=""
+          />
+          <div class="check__product__info">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, molestiae quas
+            </p>
+            <div class="buttons">
+              <input  type="number" value="1">
+              <button class="update">update</button>
+              <button class="delete">x</button>
             </div>
-            <hr>
-            <div class="check__product">
-              <img src="https://macrotronics.net/images/razer-gaming-mouse-bungee-v3-rc21-01560100-r3u1-thumb.jpg" alt="">
-              <div class="check__product__info">
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                  molestiae quas </p>
-                <div class="buttons">
-                  <button> 1 </button>
-                  <button> update </button>
-                  <button> x </button>
-
-                </div>
-                <h6>$119.00</h6>
-              </div>
+            <h6>$119.00</h6>
+          </div>
+        </div>
+        <hr />
+        <div class="check__product">
+          <img
+            src="https://macrotronics.net/images/razer-gaming-mouse-bungee-v3-rc21-01560100-r3u1-thumb.jpg"
+            alt=""
+          />
+          <div class="check__product__info">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, molestiae quas
+            </p>
+            <div class="buttons">
+              <input  type="number" value="1">
+              <button class="update">update</button>
+              <button class="delete">x</button>
             </div>
-            
+            <h6>$119.00</h6>
+          </div>
+        </div>
       </div>
       <div class="to__checkout">
-          <p>Sub-Total</p>
-          <h1>$238.00</h1>
-          <button>checkout</button>
+        <p>Sub-Total</p>
+        <h1>$238.00</h1>
+        <button>checkout</button>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-logo">
+        <div><img src="../images/logo-no-background.png" /></div>
+        <div style="padding-top: 40px">2023 &copy; DONE BY TEAM 4</div>
+      </div>
+      <div>
+        <h1>Contact Us</h1>
+        <h3>Whatsapp</h3>
+        <h3>LinkedIn</h3>
+        <h3>Facebook</h3>
+        <h3>Instagram</h3>
       </div>
     </div>
   </body>
