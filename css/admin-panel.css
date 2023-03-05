@@ -1,8 +1,6 @@
 body {
   background-color: #e9eefb;
   font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
 .container {
@@ -44,13 +42,14 @@ body {
 .side-title {
   margin-left: 2vw;
   padding-top: 10vh;
-  font-size: 28px;
+  font-size: 2vw;
 }
 
 .users-btn {
   padding: 5%;
   margin-top: 15vh;
   padding-left: 5vw;
+  font-size: 1.5vw;
 }
 
 .users-btn:hover,
@@ -61,6 +60,7 @@ body {
   padding: 5%;
   margin-top: 3vh;
   padding-left: 5vw;
+  font-size: 1.5vw;
 }
 
 table {
@@ -93,4 +93,10 @@ tr:hover {
   font-size: 64px;
   margin-left: 35vw;
   margin-top: 5vh;
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
 }
