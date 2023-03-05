@@ -9,6 +9,10 @@ body {
   display: flex;
 }
 
+.container2 {
+  display: flex;
+}
+
 .navbar {
   background-color: #bface2;
   display: flex;
@@ -17,6 +21,7 @@ body {
 }
 
 .side-panel {
+  display: inline-block;
   background-color: #655dbb;
   width: 15%;
   height: 100vh;
@@ -24,7 +29,7 @@ body {
 
 .admin-title {
   flex: 1 1 auto;
-  margin-left: 3vw;
+  margin-left: 17vw;
   margin-top: 2vh;
   font-size: 42px;
 }
@@ -38,7 +43,7 @@ body {
 
 .side-title {
   margin-left: 2vw;
-  /* margin-top: 10vh; */
+  padding-top: 10vh;
   font-size: 28px;
 }
 
@@ -59,6 +64,9 @@ body {
 }
 
 table {
+  width: 70vw;
+  margin-left: 8vw;
+  margin-top: 8vh;
 }
 th,
 td {
@@ -75,4 +83,14 @@ td {
 }
 tr:hover {
   background-color: #655dbb;
+}
+
+.content {
+  display: inline-block;
+}
+
+.content-title {
+  font-size: 64px;
+  margin-left: 35vw;
+  margin-top: 5vh;
 }
