@@ -111,10 +111,23 @@ a {
 }
 .row-products{
   display: flex;
+  /* background-color: red; */
+  justify-content: space-around;
   }
 .product{
-  margin: 20px;
-  background-color: white;
-  border: black 5px solid;
-
+  display: block;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  border: black 1px solid;
+  width: auto;
+  box-shadow: black 1px 1px 5px; 
+  box-sizing: border-box;
+}
+.product:hover{
+  box-shadow: none;
+}
+.product>img{
+  height: 300px;
+  width: 300px;
+  margin: 50px;
 }
