@@ -100,7 +100,7 @@ a {
   margin-left: 10px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 600px) {
   .logo h1 {
     font-size: 20px;
   }
@@ -149,12 +149,12 @@ a {
 .sub-product-container {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 2%;
 }
 .row-products {
   display: flex;
   justify-content: space-around;
-  margin: 15px;
+  margin: 1%;
 }
 .product {
   display: flex;
@@ -163,7 +163,7 @@ a {
   align-items: center;
   background-color: rgb(255, 255, 255);
   border: black 1px solid;
-  /* width: auto; */
+  width: 20%;
   box-shadow: rgba(174, 0, 255, 0.603) 1px 1px 10px;
   box-sizing: border-box;
   transition: all 0.3s;
@@ -175,30 +175,31 @@ a {
   margin: 20px;
 }
 .product > img {
-  height: 200px;
-  width: 200px;
-  margin: 0px 50px 20px 50px;
+  width: 90%;
+  margin: 0px 20px 20px 20px;
   border: none;
 }
 .product-price {
+  margin: 20px;
   display: flex;
-  justify-content: center;
-  font-size: 20px;
+  justify-content: space-around;
+  font-size: 1rem;
+  width: 70%;
 }
 .product-price > h4 > s {
-  font-size: 10px;
+  font-size: 0.6rem;
   margin: 10px;
 }
 .action-buttons {
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  margin: 20px;
 }
 .action-buttons > button {
-  padding: 5px;
-  margin: 5px;
-  font-size: 20px;
-  width: 150px;
+  margin: 4% 2%;
+  font-size: 100%;
+  width: 40%;
+  padding: 1%;
 }
 .action-buttons :first-child {
   background-color: #655dbb;
@@ -232,17 +233,63 @@ a {
   justify-content: space-between;
 }
 .footer img {
-  width: 400px;
+  width: 90%;
 }
 .footer div {
   text-align: center;
   justify-content: center;
 }
 .footer h3 {
-  padding: 10px;
+  padding: 5px;
 }
 .footer h1 {
   color: #3e54ac;
-  font-size: 50px;
+  font-size: 30px;
   font-family: "Monarda";
+  margin-bottom: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  .row-products{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .product{
+    width: 100%;
+  }
+  .action-buttons > button {
+    margin: 4% 2%;
+    font-size: 1em;
+    width: 40%;
+    padding: 10px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+    background-color: #bface2;
+  }
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .footer img {
+    width: 400px;
+  }
+  .footer div {
+    text-align: center;
+    justify-content: center;
+  }
+  .footer h3 {
+    padding: 10px;
+  }
+  .footer h1 {
+    color: #3e54ac;
+    font-size: 50px;
+    font-family: "Monarda";
+  }
 }
