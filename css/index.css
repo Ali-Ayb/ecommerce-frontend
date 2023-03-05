@@ -220,16 +220,26 @@ a {
 .footer{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   padding: 3%;
   background-color: #bface2;
-  margin-bottom: 50px;
+}
+.footer-logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer img{
+  width: 400px;
 }
 .footer div{
-  background-color: red;
   text-align: center;
+  justify-content: center;
 }
-
+.footer h3{
+  padding: 10px;
+}
 .footer h1{
   color: #3e54ac;
   font-size: 50px;
