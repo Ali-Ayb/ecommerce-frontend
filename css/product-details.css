@@ -7,7 +7,6 @@
 body {
   background-color: #e9eefb;
   font-family: "Poppins", sans-serif;
-  height: 100vh;
 }
 
 .header-container {
@@ -139,39 +138,63 @@ a {
     padding: 7px 15px;
     font-size: 10px;
   }
-  /* Footer media queries */
-  .row-products{
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .product{
-    width: 80%;
-    margin-bottom: 5%;
-  }
-  .action-buttons > button {
-    margin: 4% 2%;
-    font-size: 1em;
-    width: 40%;
-    padding: 10px;
-  }
 }
 /* Middle */
 .body-row{
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  margin: 17% 10%;
+  margin: 3% 10%;
 }
-.body-row .image {
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(174, 0, 255, 0.603) 1px 1px 10px;
   box-sizing: border-box;
-  margin: 0% 15%;
+  margin-right: 3%;
+  width: 100%;
+  height: fit-content;
 }
-.body-row div{
-  background-color: red;
+.product-details{
+  padding: 0% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
+.product-details :first-child{
+  line-height: 200%;
+}
+.product-details >div{
+  padding: 1%;
+}
+.body-row .product-details > div > h2{
+  font-size: 1.8rem;
+}
+.body-row .product-details > div > h3{
+  font-size: 1.2rem;
+}
+.body-row .product-details > div > h4{
+  font-size: 1.2rem;
+}
+.body-row .product-details > div > p{
+  margin: 2% 0%;
+  line-height: 200%;
+}
+.action-button{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #655dbb;
+  padding: 1%;
+  width: 30%;
+  color: white;
+  transition: all 0.3s;
+}
+.action-buttons :first-child:hover {
+  background-color: #bface2;
+  color: black;
+}
+
 
 /* Footer styles */
 .footer {
