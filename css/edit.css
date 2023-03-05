@@ -1,7 +1,8 @@
 body{
     background: #e9eefb;
     font-family: 'Poppins', sans-serif;
-
+    margin: 0;
+    padding: 0;
 }
 .main{
     padding: 50px 150px;
@@ -98,12 +99,28 @@ label{
     margin-top:  3rem;
 
 }
-.buttons button {
-    margin-right: 1rem;
-    width: 5rem;
-    border-radius: 3px;
-    border: 1px solid gray;
+
+.save,
+.cancel {
+  padding: 10px 30px;
+  background: #BFACE2;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
 }
+
+.cancel {
+    background: #655dbb;
+    margin-left: 2rem;
+}
+
+.save:hover,
+.cancel:hover {
+  background: #e9eefb;
+  border: 1px solid #655dbb;
+}
+
+
 @media (max-width: 550px) {
    
     .haf__line__input {
