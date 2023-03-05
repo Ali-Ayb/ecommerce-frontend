@@ -109,17 +109,22 @@ a {
 }
 
 .slide img{
-  width: 1050px;
-  height: 400px;
+  height: 60vh;
   border-radius: 50px;
-  flex: 0.5;
-  margin: 10px;
+  margin: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
   position: relative;
 }
 
-.slide.active {
-  flex: 5;
+.slide a h3 {
+  color: white;
+  font-size:  24px;
+  position: absolute;
+  bottom: 80px;
+  padding-left: 6%;
 }
+
 
 @media (max-width: 600px) {
   .logo h1 {
