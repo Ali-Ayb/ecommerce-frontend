@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e9eefb;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  background-color: #bface2;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 2%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo h1 {
+  color: #3e54ac;
+  font-size: 50px;
+  font-family: "Monarda";
+}
+
+.menu {
+  width: 90%;
+}
+
+.cart {
+  width: 15%;
+}
+
+.menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: larger;
+  padding-right: 5%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.shopping-window {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+  color: #666;
+  font-size: 16px;
+  line-height: 36px;
+  width: 100%;
+  max-width: 250px;
+  border: 1px solid #0e0d0d;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.cart-image {
+  width: 30px;
+  height: 30px;
+}
+
+.shopping-cart {
+  text-align: left;
+}
+
+.login-btn,
+.register-btn {
+  padding: 10px 20px;
+  background-color: #655dbb;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.login-btn:hover,
+.register-btn:hover {
+  background: #e9eefb;
+}
+
+.register-btn {
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .logo h1 {
+    font-size: 20px;
+  }
+  .menu ul li {
+    font-size: small;
+    padding-right: 3%;
+  }
+  .cart-image {
+    width: 25px;
+    height: 25px;
+    padding: 5%;
+  }
+  .shopping-cart {
+    display: none;
+  }
+  .shopping-count {
+    display: none;
+  }
+  .shopping-window {
+    background: #bface2;
+    border: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shopping-window :hover {
+    background: #655dbb;
+    border-radius: 30%;
+  }
+  .cart {
+    padding: 2%;
+  }
+  .login-btn,
+  .register-btn {
+    padding: 7px 15px;
+    font-size: 10px;
+  }
+  /* Hussein Turfah - Media Queries */
+  .row-products{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .product{
+    width: 80%;
+    margin-bottom: 5%;
+  }
+  .action-buttons > button {
+    margin: 4% 2%;
+    font-size: 1em;
+    width: 40%;
+    padding: 10px;
+  }
+}
