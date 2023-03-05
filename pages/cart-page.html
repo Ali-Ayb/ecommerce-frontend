@@ -1,68 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="../css/cart-page.css">
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart</title>
-  </head>
-  <body>
-    <div class="main">
-      <div class="check__cart">
-            <h5>Product(s)</h5>
-            <hr>
-            <div class="check__product">
-              <img src="https://macrotronics.net/images/razer-gaming-mouse-bungee-v3-rc21-01560100-r3u1-thumb.jpg" alt="">
-              <div class="check__product__info">
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                  molestiae quas </p>
-                <div class="buttons">
-                  <button> 1 </button>
-                  <button> update </button>
-                  <button> x </button>
 
-                </div>
-                <h6>$119.00</h6>
-              </div>
-            </div>
-            <hr>
-            <div class="check__product">
-              <img src="https://macrotronics.net/images/razer-gaming-mouse-bungee-v3-rc21-01560100-r3u1-thumb.jpg" alt="">
-              <div class="check__product__info">
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                  molestiae quas </p>
-                <div class="buttons">
-                  <button> 1 </button>
-                  <button> update </button>
-                  <button> x </button>
+<head>
+  <link rel="stylesheet" href="../css/cart-page.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart</title>
+</head>
 
-                </div>
-                <h6>$119.00</h6>
-              </div>
-            </div>
-            <hr>
-            <div class="check__product">
-              <img src="https://macrotronics.net/images/razer-gaming-mouse-bungee-v3-rc21-01560100-r3u1-thumb.jpg" alt="">
-              <div class="check__product__info">
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                  molestiae quas </p>
-                <div class="buttons">
-                  <button> 1 </button>
-                  <button> update </button>
-                  <button> x </button>
-
-                </div>
-                <h6>$119.00</h6>
-              </div>
-            </div>
-            
+<body>
+  <header>
+    <div class="header-container">
+      <div class="navbar">
+        <div class="title_name">
+          <a href="" class="logo">
+            <h1>TECHNOLAB</h1>
+          </a>
+        </div>
+        <div class="log_reg">
+          <button class="login-btn">Login</button>
+          <button class="register-btn">Register</button>
+        </div>
       </div>
-      <div class="to__checkout">
-          <p>Sub-Total</p>
-          <h1>$238.00</h1>
-          <button>checkout</button>
+      <div class="row">
+        <div class="menu">
+          <ul id="MenuItems">
+            <li class="products"><a href="#">Home</a></li>
+            <li class="products"><a href="#">Computers</a></li>
+            <li class="products"><a href="#">Keyboards</a></li>
+            <li class="products"><a href="#">Mouse Computer</a></li>
+            <li class="products"><a href="#">Monitors</a></li>
+            <li class="products"><a href="#">CPU</a></li>
+            <li class="products"><a href="#">RAM</a></li>
+          </ul>
+        </div>
+        <div class="cart">
+          <a href="pages/cart-page.html" class="shopping-window">
+            <img src="../images/cart.png" class="cart-image" />
+            <div class="shopping-cart">Cart</div>
+            <div class="shopping-count">0</div>
+          </a>
+        </div>
       </div>
     </div>
-  </body>
+
+
+  </header>
+
+  <div class="main">
+    <div class="check__cart">
+      <h5>Product(s)</h5>
+      <!-- <hr /> -->
+      <!-- <div class="check__product">
+        <img src="https://macrotronics.net/images/razer-gaming-mouse-bungee-v3-rc21-01560100-r3u1-thumb.jpg" alt="" />
+        <div class="check__product__info">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            mollitia, molestiae quas
+          </p>
+          <div class="buttons">
+            <input id="in1" type="number" value="1">
+            <button class="update">update</button>
+            <button class="delete">x</button>
+          </div>
+          <h6>$119.00</h6>
+        </div>
+      </div>
+      <hr />
+      <div class="check__product">
+        <img src="https://macrotronics.net/images/razer-gaming-mouse-bungee-v3-rc21-01560100-r3u1-thumb.jpg" alt="" />
+        <div class="check__product__info">
+          <h5>micawdsawd</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            mollitia, molestiae quas
+          </p>
+          <div class="buttons">
+            <input type="number" value="1">
+            <button class="update">update</button>
+            <button class="delete">x</button>
+          </div>
+          <h6>$119.00</h6>
+        </div>
+      </div>
+      <hr />
+      <div class="check__product">
+        <img src="https://macrotronics.net/images/razer-gaming-mouse-bungee-v3-rc21-01560100-r3u1-thumb.jpg" alt="" />
+        <div class="check__product__info">
+          <p>f
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            mollitia, molestiae quas
+          </p>
+          <div class="buttons">
+            <input type="number" value="1">
+            <button class="update">update</button>
+            <button class="delete">x</button>
+          </div>
+          <h6>$119.00</h6>
+        </div>
+      </div> -->
+    </div>
+    <div class="to__checkout">
+      <p>Sub-Total</p>
+      <h1>$238.00</h1>
+      <a href="./checkout.html"><button>checkout</button></a>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-logo">
+        <div>
+            <img src="../images/logos/whatsapp.png" alt="Whatsapp">
+            <img src="../images/logos/LinkedIn_logo_initials.png" alt="Linkedin">
+        </div>
+        <div>
+            <img src="../images/logos/facebook.png" alt="Facebook">
+            <img src="../images/logos/instagram.png" alt="instagram">
+        </div>
+    </div>
+    <div>
+        <div> 2023 &copy; DONE BY TEAM 4</div>
+    </div>
+</div>
+<script src="../js/cart.js"></script>
+</body>
 </html>

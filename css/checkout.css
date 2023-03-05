@@ -1,0 +1,126 @@
+body {
+  background: #e9eefb;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 37px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+}
+
+hr {
+  border: dotted gray 1.5px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  margin: 0;
+  margin-top: 4rem;
+}
+
+.main {
+  padding: 30px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.login-btn,
+.register-btn {
+  padding: 20px 60px;
+  background-color: #655dbb;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.login-btn:hover,
+.register-btn:hover {
+  background: #bface2;
+}
+
+.buttons {
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+
+.register-btn {
+  margin-left: 5rem;
+}
+
+.section img {
+  width: 4rem;
+  object-position: bottom;
+  visibility: visible;
+}
+
+@media (max-width: 770px) {
+    h1 {
+        font-size: 30px;
+    }
+    .main {
+        padding: 20px 40px;
+    }
+
+  .login-btn,
+  .register-btn {
+    padding: 10px 30px;
+    font-size: 10px;
+    
+}
+
+.register-btn {
+    margin-left: 2rem;
+}
+}
+
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 2rem;
+    margin-bottom: 12px;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #bface2;
+    border-radius: 50%;
+  }
+  
+  .container:hover input + .checkmark {
+    border:0.5px solid #655dbb;
+}
+  
+  .container input:checked + .checkmark {
+    background-color: #655dbb;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+ 
+  
+ 
