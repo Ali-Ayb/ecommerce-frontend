@@ -194,6 +194,16 @@ a {
 .check__product__info p {
   font-weight: 200;
   font-size: 13px;
+  margin-bottom: 5px;
+  color: #655dbb;
+}
+
+.check__product__info h5 {
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin: 4px 0px;
+  
 }
 
 .buttons {
@@ -276,7 +286,7 @@ a {
   }
   .check__product__info {
     max-height: 4rem;
-    margin-top: 2rem;
+    
   }
 
 }
