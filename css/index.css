@@ -146,15 +146,18 @@ a {
 .sub-product-container{
   display: flex;
   flex-direction: column;
+  margin: 20px;
 }
 .row-products{
   display: flex;
-  /* background-color: red; */
   justify-content: space-around;
+  margin: 15px
   }
 .product{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(255, 255, 255);
   border: black 1px solid;
   width: auto;
@@ -165,10 +168,13 @@ a {
 .product:hover{
   box-shadow: none;
 }
+.product>h3{
+  margin: 20px;
+}
 .product>img{
   height: 300px;
   width: 300px;
-  margin: 50px;
+  margin: 0px 50px 20px 50px;
   border: 1px black dashed;
 }
 .product-price{
@@ -187,16 +193,15 @@ a {
 }
 .action-buttons > button{
   padding: 5px;
-  /* height: 50px; */
+  margin: 5px;
   font-size: 20px;
-  width: 175px;
+  width: 150px;
 }
 .action-buttons :first-child{
   background-color: #655DBB;
   color: white;
   transition: all 0.3s;
 }
-
 .action-buttons :first-child:hover{
   background-color: #BFACE2;
   color: black;
