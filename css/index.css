@@ -154,7 +154,7 @@ a {
 .row-products {
   display: flex;
   justify-content: space-around;
-  margin: 1%;
+  margin: 3%;
 }
 .product {
   display: flex;
@@ -231,6 +231,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 2%;
 }
 .footer-logo > div{
   display: flex;
