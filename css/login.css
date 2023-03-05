@@ -58,6 +58,12 @@ input[type="password"] {
   margin-right: auto;
 }
 
+.forgot-password {
+  color: #333;
+  text-decoration: none;
+  margin-top: 5%;
+  text-align: center;
+}
 .register-link {
   margin-top: 10%;
   text-align: center;
@@ -70,7 +76,7 @@ a {
 @media only screen and (max-width: 600px) {
   .login-container {
     border-radius: 40px;
-    background-color: #c0eef2;
+    background-color: #bface2;
     height: 55%;
     width: 70%;
   }
@@ -79,7 +85,7 @@ a {
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
   .login-container {
     border-radius: 40px;
-    background-color: #c0eef2;
+    background-color: #bface2;
     height: 55%;
     width: 50%;
   }
