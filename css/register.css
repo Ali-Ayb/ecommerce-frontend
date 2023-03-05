@@ -72,6 +72,13 @@ a {
   margin-right: 10px;
 }
 
+.name-container {
+  display: flex;
+}
+.first_name {
+  margin-right: 25px;
+}
+
 @media only screen and (max-width: 600px) {
   .register-container {
     border-radius: 40px;
