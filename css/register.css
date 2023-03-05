@@ -82,7 +82,7 @@ a {
 @media only screen and (max-width: 600px) {
   .register-container {
     border-radius: 40px;
-    background-color: #c0eef2;
+    background-color: #bface2;
     height: 70%;
     width: 70%;
     margin-bottom: 30%;
@@ -92,7 +92,7 @@ a {
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
   .register-container {
     border-radius: 40px;
-    background-color: #c0eef2;
+    background-color: #bface2;
     height: 70%;
     width: 50%;
   }
