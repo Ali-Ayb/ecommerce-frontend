@@ -138,6 +138,16 @@ a {
     padding: 7px 15px;
     font-size: 10px;
   }
+  .body-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3% 10%;
+  }
+  .product-details{
+    padding: 2% 5%;
+  }
 }
 /* Middle */
 .body-row{
@@ -168,7 +178,7 @@ a {
   padding: 1%;
 }
 .body-row .product-details > div > h2{
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 .body-row .product-details > div > h3{
   font-size: 1.2rem;
