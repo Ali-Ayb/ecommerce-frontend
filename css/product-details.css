@@ -7,6 +7,7 @@
 body {
   background-color: #e9eefb;
   font-family: "Poppins", sans-serif;
+  height: 100vh;
 }
 
 .header-container {
@@ -155,7 +156,22 @@ a {
     padding: 10px;
   }
 }
-
+/* Middle */
+.body-row{
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin: 17% 10%;
+}
+.body-row .image {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(174, 0, 255, 0.603) 1px 1px 10px;
+  box-sizing: border-box;
+  margin: 0% 15%;
+}
+.body-row div{
+  background-color: red;
+}
 
 /* Footer styles */
 .footer {
