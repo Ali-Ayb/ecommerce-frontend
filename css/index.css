@@ -235,6 +235,7 @@ a {
   background-color: #655dbb;
   color: white;
 }
+/* Footer styles */
 .footer {
   display: flex;
   flex-direction: column;
