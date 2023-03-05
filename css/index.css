@@ -215,3 +215,11 @@ a {
   background-color: #655DBB;
   color: white;
 }
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3%;
+  background-color: #bface2;
+  margin-bottom: 50px;
+}
