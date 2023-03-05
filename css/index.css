@@ -32,7 +32,7 @@ body {
 .logo h1 {
   color: #3e54ac;
   font-size: 50px;
-  font-family: 'Monarda';
+  font-family: "Monarda";
 }
 
 .menu {
@@ -82,7 +82,8 @@ a {
   text-align: left;
 }
 
-.login-btn, .register-btn {
+.login-btn,
+.register-btn {
   padding: 10px 20px;
   background-color: #655dbb;
   border: none;
@@ -92,14 +93,14 @@ a {
 
 .login-btn:hover,
 .register-btn:hover {
-    background: #e9eefb;
+  background: #e9eefb;
 }
 
 .register-btn {
-  margin-left: 10px
+  margin-left: 10px;
 }
 
-@media (max-width : 420px) {
+@media (max-width: 420px) {
   .logo h1 {
     font-size: 20px;
   }
@@ -112,10 +113,10 @@ a {
     height: 25px;
     padding: 5%;
   }
-  .shopping-cart{
+  .shopping-cart {
     display: none;
   }
-  .shopping-count{
+  .shopping-count {
     display: none;
   }
   .shopping-window {
@@ -126,98 +127,98 @@ a {
   }
 
   .shopping-window :hover {
-    background: #655dbb ;
+    background: #655dbb;
     border-radius: 30%;
   }
   .cart {
     padding: 2%;
   }
-  .login-btn, .register-btn {
+  .login-btn,
+  .register-btn {
     padding: 7px 15px;
     font-size: 10px;
-  }  
+  }
 }
-
 
 /* navbar style - Hussein Turfah  */
 
-.main-product-container{
+.main-product-container {
   display: flex;
   flex-direction: column;
 }
-.sub-product-container{
+.sub-product-container {
   display: flex;
   flex-direction: column;
   margin: 20px;
 }
-.row-products{
+.row-products {
   display: flex;
   justify-content: space-around;
-  margin: 15px
-  }
-.product{
+  margin: 15px;
+}
+.product {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgb(255, 255, 255);
   border: black 1px solid;
-  width: auto;
-  box-shadow: rgba(174, 0, 255, 0.603) 1px 1px 10px; 
+  /* width: auto; */
+  box-shadow: rgba(174, 0, 255, 0.603) 1px 1px 10px;
   box-sizing: border-box;
   transition: all 0.3s;
 }
-.product:hover{
+.product:hover {
   box-shadow: none;
 }
-.product>h3{
+.product > h3 {
   margin: 20px;
 }
-.product>img{
-  height: 300px;
-  width: 300px;
+.product > img {
+  height: 200px;
+  width: 200px;
   margin: 0px 50px 20px 50px;
-  border: 1px black dashed;
+  border: none;
 }
-.product-price{
+.product-price {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   font-size: 20px;
 }
-.product-price > h4 > s{
+.product-price > h4 > s {
   font-size: 10px;
   margin: 10px;
 }
-.action-buttons{
+.action-buttons {
   display: flex;
   justify-content: space-between;
   margin: 20px;
 }
-.action-buttons > button{
+.action-buttons > button {
   padding: 5px;
   margin: 5px;
   font-size: 20px;
   width: 150px;
 }
-.action-buttons :first-child{
-  background-color: #655DBB;
+.action-buttons :first-child {
+  background-color: #655dbb;
   color: white;
   transition: all 0.3s;
 }
-.action-buttons :first-child:hover{
-  background-color: #BFACE2;
+.action-buttons :first-child:hover {
+  background-color: #bface2;
   color: black;
 }
-.action-buttons :nth-child(2){
-  background-color: #BFACE2;
+.action-buttons :nth-child(2) {
+  background-color: #bface2;
   color: black;
   transition: all 0.3s;
 }
-.action-buttons :nth-child(2):hover{
-  background-color: #655DBB;
+.action-buttons :nth-child(2):hover {
+  background-color: #655dbb;
   color: white;
 }
-.footer{
+.footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -225,23 +226,23 @@ a {
   padding: 3%;
   background-color: #bface2;
 }
-.footer-logo{
+.footer-logo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.footer img{
+.footer img {
   width: 400px;
 }
-.footer div{
+.footer div {
   text-align: center;
   justify-content: center;
 }
-.footer h3{
+.footer h3 {
   padding: 10px;
 }
-.footer h1{
+.footer h1 {
   color: #3e54ac;
   font-size: 50px;
-  font-family: 'Monarda';
+  font-family: "Monarda";
 }
