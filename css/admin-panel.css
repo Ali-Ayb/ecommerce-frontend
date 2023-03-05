@@ -1,18 +1,21 @@
 body {
   background-color: #e9eefb;
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+.container {
+  display: flex;
+}
 .navbar {
-  background-color: red;
-  display: inline-block;
-  width: 80.7vw;
+  background-color: #bface2;
+  width: 85%;
   height: 10vh;
 }
 
 .side-panel {
-  background-color: blue;
-  display: inline-block;
-  width: 15vw;
+  background-color: #655dbb;
+  width: 15%;
   height: 100vh;
 }
