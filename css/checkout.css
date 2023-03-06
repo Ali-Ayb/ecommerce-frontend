@@ -30,6 +30,7 @@ hr {
 
 .login-btn,
 .register-btn {
+  color: white;
   padding: 20px 60px;
   background-color: #655dbb;
   border: none;
@@ -48,6 +49,7 @@ hr {
 }
 
 .register-btn {
+  color: white;
   margin-left: 5rem;
 }
 

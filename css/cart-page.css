@@ -4,8 +4,6 @@ body {
   padding: 0;
   margin: 0;
 }
-
-
 .header-container {
   display: flex;
   flex-direction: column;
@@ -55,7 +53,7 @@ a {
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .shopping-window {
@@ -87,6 +85,7 @@ a {
 
 .login-btn,
 .register-btn {
+  color: white;
   padding: 10px 20px;
   background-color: #655dbb;
   border: none;
@@ -96,6 +95,7 @@ a {
 
 .login-btn:hover,
 .register-btn:hover {
+  color:black;
   background: #e9eefb;
 }
 
@@ -270,6 +270,7 @@ a {
 }
 
 .to__checkout button {
+  padding: 10px 10px;
   width: 100%;
   border-radius: 3px;
   background: #e9eefb ;
@@ -277,6 +278,7 @@ a {
 }
 
 .to__checkout button:hover{
+  color: white;
   background: #655dbb;
 }
 

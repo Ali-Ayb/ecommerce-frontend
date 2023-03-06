@@ -56,10 +56,15 @@ body {
 .register-link {
   margin-top: 10%;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  flex-direction: column;
 }
 
 a {
   color: #537fe7;
+  margin: 2%;
 }
 
 .gender {
