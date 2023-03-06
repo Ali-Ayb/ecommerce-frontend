@@ -1,19 +1,20 @@
-const slide = document.querySelectorAll('slide');
-const scrol = document.getElementById('scroll')
+// const mySlides = document.querySelectorAll('.mySlides');
+const left = document.getElementById("left")
+const right = document.getElementById("right")
 
-console.log(slide[0])
+// console.log(mySlides[0])
+let slideIndex = 1
 
-scrol.addEventListener('click', () => {
-    slide.forEach((s) => {
-            removeActiveClasses()
-            s.classList.add('active')
-    })
-})
+showSlides(slideIndex);
 
+function showSlides(n) {
 
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
 
-function removeActiveClasses() {
-    slide.forEach((s) => {
-        s.classList.remove('active')
-    })
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+
+    slides[slideIndex-1].style.display = "block";  
 }
