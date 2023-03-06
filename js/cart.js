@@ -1,12 +1,12 @@
 window.onload = () => {
   axios
-    .get("http://localhost//ecommerce-backend/cart_api.php")
+    .get("http://localhost//ecommerce_backend/cart_api.php")
     .then((res) => {
       const result = res.data;
       const DATA = result.response;
       const cart = document.getElementsByClassName("check__cart")[0];
       const total = document.getElementById("total");
-      total.innerHTML ="$" + result.total;
+      total.innerHTML = "$" + result.total;
       console.log(cart);
       if (DATA.length === 0) {
         const product = document.createElement("div");
@@ -21,7 +21,7 @@ window.onload = () => {
         product.id = data.cart_id;
         const hr = document.createElement("hr");
         product.innerHTML = `<div class="check__product">
-          <img src=${"." +data.img} alt="" />
+          <img src='http://localhost/ecommerce_backend/${data.img}'/>
           <div class="check__product__info">
               <h5>
                   ${data.name}
@@ -48,7 +48,7 @@ window.onload = () => {
           d.append("cart_id", data.cart_id);
           d.append("quantity", input);
           axios
-            .post("http://localhost//ecommerce-backend/update_cart_api.php", d)
+            .post("http://localhost//ecommerce_backend/update_cart_api.php", d)
             .then((result) => {
               console.log(result.response.result);
             })
@@ -63,7 +63,7 @@ window.onload = () => {
           cart.removeChild(product);
           axios
             .post(
-              "http://localhost//ecommerce-backend/delete_from_cart_api.php",
+              "http://localhost//ecommerce_backend/delete_from_cart_api.php",
               d
             )
             .then((result) => {

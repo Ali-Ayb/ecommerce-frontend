@@ -28,7 +28,8 @@ window.onload = () => {
     axios
       .post("http://localhost/ecommerce_backend/register_api.php", data)
       .then((result) => {
-        alert(result.data.status);
+        // console.log(result.data.status);
+        console.log(result);
         if (result.data.status == "success") {
           alert("registered succesfully");
         }

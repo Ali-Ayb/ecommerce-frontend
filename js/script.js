@@ -3,7 +3,7 @@ const right = document.getElementById("right");
 let icon = document.getElementById("active2");
 let login_register = document.getElementsByClassName("active1");
 let slideIndex = 1;
-let userid = true;
+let userid = false;
 
 showSlides(slideIndex);
 
@@ -11,21 +11,21 @@ left.addEventListener("click", () => showSlides((slideIndex -= 1)));
 right.addEventListener("click", () => showSlides((slideIndex += 1)));
 
 window.onload = () => {
-
   const main = document.getElementById("main");
   const laptops = document.getElementById("laptops");
   const mouses = document.getElementById("mouses");
   const keyboards = document.getElementById("Keyboards");
   axios
-    .get("http://localhost//ecommerce-backend/get_products_api.php")
+    .get("http://localhost/ecommerce_backend/get_products_api.php")
     .then((response) => {
       const DATA = response.data;
       DATA.map((data) => {
         const product = document.createElement("div");
+        console.log("here");
         product.className = "product";
         product.innerHTML = `   
         <h3>${data.product_name}</h3>
-        <img src=${data.product_img}>
+        <img src='http://localhost/ecommerce_backend/${data.product_img}'>
         <div class="product-price">
             <h4>${data.product_price} $</h4>
             <h4><s>${parseInt(data.product_price) + 20} $</s></h4>
@@ -46,36 +46,34 @@ window.onload = () => {
         const details = document.getElementById(`details${data.product_id}`);
         const cart = document.getElementById(`cart${data.product_id}`);
 
-
-        details.addEventListener("click", ()=> {
-             test = 2;
-            sessionStorage.setItem("img", `.${data.product_img}`)
-            sessionStorage.setItem("name", `${data.product_name}`)
-            sessionStorage.setItem("price", `${data.product_price}`)
-            sessionStorage.setItem("desc", `${data.product_description}`)
-            window.location.href = "./pages/product-details.html";
+        details.addEventListener("click", () => {
+          console.log("hererere");
+          sessionStorage.setItem("img", `${data.product_img}`);
+          sessionStorage.setItem("name", `${data.product_name}`);
+          sessionStorage.setItem("price", `${data.product_price}`);
+          sessionStorage.setItem("desc", `${data.product_description}`);
+          window.location.href = "./pages/product-details.html";
         });
-
 
         cart.addEventListener("click", () => {
           const formData = new FormData();
           formData.append("product_id", data.product_id);
           axios
             .post(
-              "http://localhost//ecommerce-backend/add_to_cart_api.php",
+              "http://localhost//ecommerce_backend/add_to_cart_api.php",
               formData
             )
             .then((data) => {
-                console.log(data);
+              console.log(data);
             })
-            .catch((error) => {console.log(error);});
+            .catch((error) => {
+              console.log(error);
+            });
         });
       });
-
-
     })
     .catch((error) => {
-      console.log(error);
+      console.log(error.message);
     });
 };
 

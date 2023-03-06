@@ -11,7 +11,7 @@ window.onload = () => {
   const data = new FormData();
   data.append("user_id", 1);
   axios
-    .post("http://localhost//ecommerce-backend/get_profile_api.php", data)
+    .post("http://localhost//ecommerce_backend/get_profile_api.php", data)
     .then((result) => {
       const DATA = result.data;
       Object.keys(DATA).forEach((data) => {
@@ -25,17 +25,15 @@ window.onload = () => {
     });
 
   axios
-    .post("http://localhost//ecommerce-backend/get_location_api.php", data)
+    .post("http://localhost//ecommerce_backend/get_location_api.php", data)
     .then((data) => {
-      const  LOCATION_DATA = data.data
-      Object.keys(LOCATION_DATA).forEach(data => {
-          address.value = LOCATION_DATA.address;
-          state.value = LOCATION_DATA.state;
-          city.value = LOCATION_DATA.city;
-          contact_number.value = LOCATION_DATA.contact_number;
-          
-
-      })
+      const LOCATION_DATA = data.data;
+      Object.keys(LOCATION_DATA).forEach((data) => {
+        address.value = LOCATION_DATA.address;
+        state.value = LOCATION_DATA.state;
+        city.value = LOCATION_DATA.city;
+        contact_number.value = LOCATION_DATA.contact_number;
+      });
     })
     .catch((erro) => {
       console.log(erro);
@@ -64,7 +62,7 @@ save.addEventListener("click", () => {
   data.append("state", state);
   data.append("user_id", 1);
   axios
-    .post("http://localhost//ecommerce-backend/edit_profile_api.php", data)
+    .post("http://localhost//ecommerce_backend/edit_profile_api.php", data)
     .then((data) => console.log(data.data))
     .catch((error) => console.log(error));
 });

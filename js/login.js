@@ -15,9 +15,11 @@ window.onload = () => {
       .post("http://localhost/ecommerce_backend/login_api.php", data)
       .then((result) => {
         console.log(result.data.status);
-        if (result.data.status == "success") {
-          alert("login succesfully");
-          window.location.href = "../index.html";
+        if (result.data.user_id) {
+          console.log(result.data.user_id);
+          sessionStorage.setItem("user_id", result.data.user_id);
+          // alert("login succesfully");
+          // window.location.href = "../index.html";
         }
       })
       .catch((err) => {

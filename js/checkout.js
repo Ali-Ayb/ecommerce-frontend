@@ -43,12 +43,12 @@ submit_button.addEventListener("click", () => {
   const data = new FormData();
   data.append("user_id", 1);
   data.append("cart_id", 1);
-  data.append("method",method);
+  data.append("method", method);
   axios
-    .post("http://localhost//ecommerce-backend/chechout_api.php", data)
+    .post("http://localhost//ecommerce_backend/chechout_api.php", data)
     .then(function (res) {
-      window.location.href = "../index.html";
       console.log(res.data.result);
+      // window.location.href = "../index.html";
     })
     .catch(function (err) {
       console.error(err);

@@ -8,7 +8,7 @@ window.onload = () => {
   console.log(img);
   product.className = "body-row";
   product.innerHTML = ` <div class="image">
-    <img src=${img}>
+    <img src='http://localhost/ecommerce_backend/${img}'>
 </div>
 <div class="product-details">
     <div>
@@ -22,8 +22,5 @@ window.onload = () => {
         <p>${details}!</p> 
     </div>
 </div>`;
-main.appendChild(product);
+  main.appendChild(product);
 };
-
-
-
