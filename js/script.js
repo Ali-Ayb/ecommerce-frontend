@@ -4,6 +4,21 @@ let icon = document.getElementById("active2");
 let login_register = document.getElementsByClassName("active1");
 let slideIndex = 1;
 let userid = false;
+let id = 12
+
+const login = document.getElementById("login");
+const register = document.getElementById("register");
+login.addEventListener("click",() => {
+    window.location.href = "./pages/login.html"
+})
+register.addEventListener("click",() => {
+    window.location.href = "./pages/register.html"
+})
+
+if(sessionStorage.getItem("user_id")){
+    userid = true;
+    id = sessionStorage.getItem("user_id");
+}
 
 showSlides(slideIndex);
 
@@ -29,7 +44,7 @@ window.onload = () => {
         <div class="product-price">
             <h4>${data.product_price} $</h4>
             <h4><s>${parseInt(data.product_price) + 20} $</s></h4>
-            <input type="checkbox">
+            <button id = "favorite${data.product_id}">💜</button>
         </div>
         <div class="action-buttons">
             <button id = "details${data.product_id}">Details</button>
@@ -45,7 +60,8 @@ window.onload = () => {
 
         const details = document.getElementById(`details${data.product_id}`);
         const cart = document.getElementById(`cart${data.product_id}`);
-
+        const favorit = document.getElementById(`favorite${data.product_id}`);
+        console.log(favorit);
         details.addEventListener("click", () => {
           console.log("hererere");
           sessionStorage.setItem("img", `${data.product_img}`);
@@ -54,7 +70,14 @@ window.onload = () => {
           sessionStorage.setItem("desc", `${data.product_description}`);
           window.location.href = "./pages/product-details.html";
         });
-
+        favorit.addEventListener("click", () => {
+            const formData = new FormData();
+            formData.append("product_id", data.product_id);
+            formData.append("user_id", id);
+            axios.post("http://localhost//ecommerce_backend/add_to_favorite.php",formData).then(data => {
+                console.log(data);
+            }).catch(error => console.log(error))
+        })
         cart.addEventListener("click", () => {
           const formData = new FormData();
           formData.append("product_id", data.product_id);
