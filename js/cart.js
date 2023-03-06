@@ -1,18 +1,18 @@
-
 window.onload = () => {
   axios
     .get("http://localhost//ecommerce-backend/cart_api.php")
     .then((res) => {
-      const DATA = res.data;
-      console.log(DATA);
-      console.log(DATA.length);
+      const result = res.data;
+      const DATA = result.response;
       const cart = document.getElementsByClassName("check__cart")[0];
+      const total = document.getElementById("total");
+      total.innerHTML ="$" + result.total;
       console.log(cart);
       if (DATA.length === 0) {
         const product = document.createElement("div");
         product.className = "nothing";
-        product.innerHTML = "<h1> you have nothing in cart</h1>"
-        cart.appendChild(product)
+        product.innerHTML = "<h1> you have nothing in cart</h1>";
+        cart.appendChild(product);
         return;
       }
       DATA.map((data) => {
@@ -56,19 +56,22 @@ window.onload = () => {
             });
         });
 
-        remove .addEventListener("click", () => {
+        remove.addEventListener("click", () => {
           const d = new FormData();
           d.append("cart_id", data.cart_id);
           cart.removeChild(product);
           axios
-            .post("http://localhost//ecommerce-backend/delete_from_cart_api.php", d)
+            .post(
+              "http://localhost//ecommerce-backend/delete_from_cart_api.php",
+              d
+            )
             .then((result) => {
               console.log(result.response.result);
             })
             .catch((error) => {
               console.log(error);
             });
-        })
+        });
       });
     })
     .catch((err) => {
