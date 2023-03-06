@@ -2,7 +2,6 @@
 const left = document.getElementById("left")
 const right = document.getElementById("right")
 
-// console.log(mySlides[0])
 let slideIndex = 1
 
 showSlides(slideIndex);
@@ -13,7 +12,7 @@ right.addEventListener('click', () => showSlides(slideIndex += 1))
 function showSlides(n) {
 
     let i;
-    let slides = document.getElementsByClassName("mySlides");
+    const slides = document.getElementsByClassName("mySlides");
 
     if (n > slides.length) {
         slideIndex = 1
@@ -30,8 +29,14 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";  
 }
 
+let j;
+const slides = document.getElementsByClassName("mySlides");
 
-
+for (j = 0 ; j < slides.length ; j++){
+    slides[j].addEventListener("click",() => {
+        location.replace("pages/product-details.html")
+    })
+}
 
 
 
