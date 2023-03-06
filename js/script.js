@@ -1,4 +1,5 @@
-// const mySlides = document.querySelectorAll('.mySlides');
+
+
 const left = document.getElementById("left")
 const right = document.getElementById("right")
 
@@ -34,7 +35,7 @@ const slides = document.getElementsByClassName("mySlides");
 
 for (j = 0 ; j < slides.length ; j++){
     slides[j].addEventListener("click",() => {
-        location.replace("pages/product-details.html")
+        window.location.href = "./pages/product-details.html"
     })
 }
 
