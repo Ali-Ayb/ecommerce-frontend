@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/login-style.css">
     <link rel="stylesheet" href="../css/login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
     <title>Login</title>
 </head>
 
@@ -16,22 +17,23 @@
         <div class="container">
             <div class="login-container">
                 <h1 class="login-title">Login</h1>
-                <form class="login-form">
+                <div class="login-form">
                     <label for="email">Email:</label>
                     <input type="text" id="email" placeholder="Enter your email">
 
                     <label for="password">Password:</label>
                     <input type="password" id="password" placeholder="Enter your password">
 
-                    <button type="submit" class="login-button">Login</button>
+                    <button type="submit" class="login-button" id="login-button">Login</button>
 
                     <p class="forgot-password"><a href="#">Forgot your password?</a></p>
 
                     <p class="register-link">Not registered? <a href="register.html">Register as a new User</a>
                     </p>
-                </form>
+                </div>
             </div>
         </div>
+        <script src="../js/login.js"></script>
     </body>
 
 </body>
