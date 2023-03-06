@@ -19,7 +19,6 @@ window.onload = () => {
             fname.value = DATA.first_name;
             lname.value = DATA.last_name;
             email.value = DATA.email;
-
         })
     }).catch(erro => {
         console.log(erro);
