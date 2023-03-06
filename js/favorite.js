@@ -12,12 +12,14 @@ window.onload = () => {
         let productBox = document.getElementById('productBox');
         DATA.map((data) => {
             let product = document.createElement('div');
+            console.log(parseInt(data.product_price));
+            
             product.innerHTML = `
-            <h3>Product name goes here</h3>
-            <img src="../images/mouses/910-004530-thumb.jpg">
+            <h3>${data.product_name}</h3>
+            <img src=${data.product_img}>
             <div class="product-price">
-                <h4>Price $</h4>
-                <h4><s>Old Price $</s></h4>
+                <h4>${data.product_price} $</h4>
+                <h4><s>${parseInt(data.product_price)+ 20} $</s></h4>
                 <input type="checkbox" checked>
             </div>
             <div class="action-buttons">
