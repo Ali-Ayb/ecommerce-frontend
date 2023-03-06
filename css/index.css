@@ -233,6 +233,12 @@ a {
     width: 40%;
     padding: 10px;
   }
+  .btnn{
+    font-size: 15px;
+    line-height: 20px;
+    width: 25px;
+  }
+  
 }
 
 /* navbar style - Hussein Turfah  */
