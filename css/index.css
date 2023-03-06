@@ -104,39 +104,6 @@ a {
 
 /* slide images */
 
-/* 
-.slide-container {
-  display: flex;
-  width: 97%;
-  height: 100%;
-}
-
-.slide img{
-  width: 100%;
-  height: 80%;
-  border-radius: 50px;
-  margin: 1%;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
-.slide a{
-  margin-top: 90%;
-}
-.slide a h3 {
-  color: black;
-  font-size:  24px;
-  position: absolute;
-  padding-left: 6%;
-  top: 65%;
-}
-
-.slide.active {
-  flex: 5;
-} */
-
-
-
 .slide-container {
   display: flex;
   width: 97%;
