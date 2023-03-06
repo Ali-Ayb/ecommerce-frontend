@@ -192,7 +192,7 @@ a {
   }
   .product{
     width: 80% !important;
-    margin-bottom: 5%;
+    margin: 2%;
   }
   .action-buttons > button {
     margin: 4% 2%;
