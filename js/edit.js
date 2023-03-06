@@ -59,12 +59,12 @@ save.addEventListener("click", () => {
   data.append("email", email);
   data.append("password", password);
   data.append("address", address);
-  data.append("contact_number", fname);
+  data.append("contact_number", contact_number);
   data.append("city", city);
   data.append("state", state);
   data.append("user_id", 1);
   axios
     .post("http://localhost//ecommerce-backend/edit_profile_api.php", data)
-    .then((data) => console.log(data.result))
+    .then((data) => console.log(data.data))
     .catch((error) => console.log(error));
 });
