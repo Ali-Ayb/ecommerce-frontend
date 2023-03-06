@@ -40,6 +40,8 @@ body {
   width: 15%;
 }
 
+
+
 a {
   width: 50%;
 }
@@ -177,6 +179,17 @@ a {
   justify-content: center;
   align-items: center;
   margin: 20px 0 ;
+}
+
+.nothing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+}
+.nothing h1 {
+  font-size: 2rem;
+  
 }
 
 .check__product img {
