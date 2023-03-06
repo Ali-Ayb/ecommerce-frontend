@@ -16,7 +16,7 @@ window.onload = () => {
             
             product.innerHTML = `
             <h3>${data.product_name}</h3>
-            <img src=${data.product_img}>
+            <img src=${"." + data.product_img}>
             <div class="product-price">
                 <h4>${data.product_price} $</h4>
                 <h4><s>${parseInt(data.product_price)+ 20} $</s></h4>
