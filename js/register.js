@@ -25,17 +25,10 @@ window.onload = () => {
     data.append("birth_date", birth_date);
     data.append("gender", gender);
 
-    const result = axios
-      .post("http://localhost/ecommerce_backend/register_api.php", data, {
-        // headers: {
-        //   "Access-Control-Allow-Origin": "*",
-        //   "Access-Control-Allow-Headers": "*",
-        //   "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
-        //   "Access-Control-Allow-Credentials": true,
-        // },
-      })
+    axios
+      .post("http://localhost/ecommerce_backend/register_api.php", data)
       .then((result) => {
-        alert("hello");
+        alert(result.data.status);
         if (result.data.status == "success") {
           alert("registered succesfully");
         }
