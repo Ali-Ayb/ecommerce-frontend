@@ -32,7 +32,7 @@ window.onload = () => {
       .then((result) => {
         console.log(result.data.response);
         if (result.data.response == "true") {
-          alert("added succesfully");
+          console.log("all good");
         }
       })
       .catch((err) => {
