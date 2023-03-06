@@ -7,6 +7,9 @@ let slideIndex = 1
 
 showSlides(slideIndex);
 
+left.addEventListener('click', () => showSlides(slideIndex -= 1))
+right.addEventListener('click', () => showSlides(slideIndex += 1))
+
 function showSlides(n) {
 
     let i;
