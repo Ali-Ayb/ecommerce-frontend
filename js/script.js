@@ -2,9 +2,8 @@ const left = document.getElementById("left");
 const right = document.getElementById("right");
 let icon = document.getElementById("active2");
 let login_register = document.getElementsByClassName("active1");
-
 let slideIndex = 1;
-let userid = false;
+let userid = true;
 
 showSlides(slideIndex);
 
@@ -12,6 +11,7 @@ left.addEventListener("click", () => showSlides((slideIndex -= 1)));
 right.addEventListener("click", () => showSlides((slideIndex += 1)));
 
 window.onload = () => {
+
   const main = document.getElementById("main");
   const laptops = document.getElementById("laptops");
   const mouses = document.getElementById("mouses");
@@ -48,7 +48,12 @@ window.onload = () => {
 
 
         details.addEventListener("click", ()=> {
-
+             test = 2;
+            sessionStorage.setItem("img", `.${data.product_img}`)
+            sessionStorage.setItem("name", `${data.product_name}`)
+            sessionStorage.setItem("price", `${data.product_price}`)
+            sessionStorage.setItem("desc", `${data.product_description}`)
+            window.location.href = "./pages/product-details.html";
         });
 
 

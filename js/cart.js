@@ -16,11 +16,12 @@ window.onload = () => {
         return;
       }
       DATA.map((data) => {
+        console.log(data);
         const product = document.createElement("div");
         product.id = data.cart_id;
         const hr = document.createElement("hr");
         product.innerHTML = `<div class="check__product">
-          <img src=${data.img} alt="" />
+          <img src=${"." +data.img} alt="" />
           <div class="check__product__info">
               <h5>
                   ${data.name}
