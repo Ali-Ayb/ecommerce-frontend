@@ -1,14 +1,28 @@
-let is_user = true;
+let is_user = false;
 let is_billing_accepted = false;
 let pay_method = false;
 let id = "";
 let method = "";
 
-// if (sessionStorage.getItem("userId")){
-//     is_user = true;
-//     id = sessionStorage.getItem("userId");
-//     testToShow(billing, is_user);
-// }
+const testToShow = (element, permition) => {
+  if (permition) {
+    element.style.display = "block";
+    element.style.transition = "1ms";
+  } else {
+    element.style.display = "none";
+  }
+  
+};
+
+if (sessionStorage.getItem("user_id")){
+  
+    is_user = true;
+    document.getElementById("customer_content").style.display = "none"
+
+    id = sessionStorage.getItem("use_rd");
+    testToShow(billing, is_user);
+
+}
 const billing = document.getElementById("billing_content");
 const payment = document.getElementById("payment_content");
 const submit_button = document.getElementById("submit");
@@ -41,7 +55,7 @@ visa.addEventListener("visa", () => {
 
 submit_button.addEventListener("click", () => {
   const data = new FormData();
-  data.append("user_id", 1);
+  data.append("user_id", id);
   data.append("cart_id", 1);
   data.append("method", method);
   axios
@@ -55,14 +69,7 @@ submit_button.addEventListener("click", () => {
     });
 });
 
-const testToShow = (element, permition) => {
-  if (permition) {
-    element.style.display = "block";
-    element.style.transition = "1ms";
-  } else {
-    element.style.display = "none";
-  }
-};
+
 
 testToShow(billing, is_user);
 testToShow(payment, is_billing_accepted);

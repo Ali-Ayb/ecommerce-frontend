@@ -6,7 +6,13 @@ window.onload = () => {
       const DATA = result.response;
       const cart = document.getElementsByClassName("check__cart")[0];
       const total = document.getElementById("total");
-      total.innerHTML = "$" + result.total;
+      const setTotal = (total_price) => {
+        const total = document.getElementById("total");
+
+        total.innerHTML = "$" + total_price;
+      }      
+      setTotal(result.total);
+      
       console.log(cart);
       if (DATA.length === 0) {
         const product = document.createElement("div");
@@ -47,6 +53,7 @@ window.onload = () => {
           const d = new FormData();
           d.append("cart_id", data.cart_id);
           d.append("quantity", input);
+
           axios
             .post("http://localhost//ecommerce_backend/update_cart_api.php", d)
             .then((result) => {
@@ -61,6 +68,7 @@ window.onload = () => {
           const d = new FormData();
           d.append("cart_id", data.cart_id);
           cart.removeChild(product);
+          
           axios
             .post(
               "http://localhost//ecommerce_backend/delete_from_cart_api.php",
@@ -72,6 +80,8 @@ window.onload = () => {
             .catch((error) => {
               console.log(error);
             });
+            setTotal(result.total- (data.price * data.quantity));
+
         });
       });
     })
