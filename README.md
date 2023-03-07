@@ -6,7 +6,7 @@ and purchase products or services online. The project may include designing and 
 Team leader name : Ali Ayoub
 Team members' names : Hsein Kteish, Ali Janbein, Hsein Turfah
 
-###User Stories:
+### User Stories:
 <ul>
   <li>As an admin, I want to be able to add a new product to the system so that customers can see and purchase it.</li>
   <li>As an admin, I want to be able to edit product details (such as name, description, price, and image) in case any changes are required.</li>
