@@ -18,7 +18,7 @@ window.onload = () => {
           console.log(result.data.user_id);
           sessionStorage.setItem("user_id", result.data.user_id);
           // alert("login succesfully");
-          // window.location.href = "../index.html";
+          window.location.href = "../index.html";
         }
       })
       .catch((err) => {
