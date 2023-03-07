@@ -31,3 +31,36 @@ Team members' names : Hsein Kteish, Ali Janbein, Hsein Turfah
   <li style="color:#655DBB;">purple</li>
   <li style="color:#BFACE2;">white purple</li>
 </ul>
+
+### Wireframes:
+
+#### The following images show the concept design of our Home page
+
+![image1](https://user-images.githubusercontent.com/120685276/223327142-7793309b-5b65-497f-bc4d-a13212de21fa.png)
+
+![image2](https://user-images.githubusercontent.com/120685276/223327247-8da7cd07-4c5f-44bf-8414-1faa9b38aba9.png)
+
+#### The following images show the concept design of our Profuct details page
+
+![image3](https://user-images.githubusercontent.com/120685276/223327415-ebc75011-2838-4597-bfa8-e8c0a1836d8c.png)
+
+![image4](https://user-images.githubusercontent.com/120685276/223327548-ad49d63f-d347-456d-9fa6-60a962219668.png)
+
+#### The following images show the concept design of our Admin page
+
+![image7](https://user-images.githubusercontent.com/120685276/223327643-b06abc8f-11b0-4d7e-966a-8be7682ff8e3.png)
+
+#### The following images show the concept design of our Login Register pages
+
+![image6](https://user-images.githubusercontent.com/120685276/223327723-555f7d51-be39-4d88-99a9-285b363696d7.png)
+
+
+
+
+
+
+
+
+
+
+
