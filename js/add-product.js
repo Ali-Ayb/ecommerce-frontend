@@ -37,7 +37,7 @@ window.onload = () => {
       data.append("product_description", product_description);
       data.append("product_model_number", product_model_number);
       data.append("product_quantity", product_quantity);
-      console.log("here");
+      // console.log("here");
       axios
         .post("http://localhost/ecommerce_backend/add_product_api.php", data)
         .then((result) => {
