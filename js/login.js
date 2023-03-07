@@ -1,7 +1,6 @@
 window.onload = () => {
   let login_btn = document.getElementById("login-button");
   login_btn.addEventListener("click", login);
-  alert("hello");
 
   function login() {
     let email = document.getElementById("email").value;
