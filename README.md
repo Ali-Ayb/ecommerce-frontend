@@ -24,3 +24,10 @@ Team members' names : Hsein Kteish, Ali Janbein, Hsein Turfah
   <li>As a client, I need to add several products to my cart so that I can checkout in batch.</li>
   <li>As a client, I need to view product details so that I can know more about them.</li>
 </ul>
+
+### Color Palette:
+<ul>
+  <li style="color:#E9EEFB;">white blue</li>
+  <li style="color:#655DBB;">purple</li>
+  <li style="color:#BFACE2;">white purple</li>
+</ul>
