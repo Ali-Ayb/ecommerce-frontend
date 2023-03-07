@@ -2,9 +2,13 @@ window.onload = () => {
   getUsers();
   const products_btn = document.getElementById("products-btn");
   const user_btn = document.getElementById("users-btn");
+  const delete_btn = document.getElementById("delete");
   products_btn.addEventListener("click", getProducts);
   user_btn.addEventListener("click", getUsers);
+  delete_btn.addEventListener("click", delete_fun);
 };
+
+const delete_fun = () => {};
 
 const getUsers = () => {
   const tbody = document.getElementById("tbody");
@@ -15,8 +19,8 @@ const getUsers = () => {
                 <th>Email</th>
                 <th>First Name</th>
                 <th>Last Name</th>
-                <th>Age</th>
                 <th>Gender</th>
+                <th>Age</th>
                 </tr>`;
 
   let data = "";
@@ -46,6 +50,7 @@ const getProducts = () => {
                 <th>Price</th>
                 <th>Image</th>
                 <th>quantity</th>
+                <th></th>
                 </tr>`;
 
   content_title_btn.textContent = "Products";
@@ -60,6 +65,7 @@ const getProducts = () => {
                 <td>${element[2]}</td>
                 <td><img src='http://localhost/ecommerce_backend/${element[3]}' height='100px' width='100px'/></td>
                 <td>${element[4]}</td>
+                <td><a class='delete' id='delete' href='#'>delete</a><a class='edit' id='edit' href='#'>Edit</a></td>
                 </tr>`;
       });
       tbdoy.innerHTML = data;
