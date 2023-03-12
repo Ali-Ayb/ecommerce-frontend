@@ -7,9 +7,10 @@ window.onload = () => {
   const state = document.getElementById("state");
   const city = document.getElementById("city");
   const contact_number = document.getElementById("number");
-
+  const id = sessionStorage.getItem("user_id");
+  console.log(id);
   const data = new FormData();
-  data.append("user_id", 1);
+  data.append("user_id", id);
   axios
     .post("http://localhost//ecommerce_backend/get_profile_api.php", data)
     .then((result) => {
@@ -60,7 +61,9 @@ save.addEventListener("click", () => {
   data.append("contact_number", contact_number);
   data.append("city", city);
   data.append("state", state);
-  data.append("user_id", 1);
+  const id = sessionStorage.getItem("user_id");
+
+  data.append("user_id", id);
   axios
     .post("http://localhost//ecommerce_backend/edit_profile_api.php", data)
     .then((data) => console.log(data.data))

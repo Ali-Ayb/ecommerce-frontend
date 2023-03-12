@@ -19,7 +19,6 @@ const getUsers = () => {
                 <th>Email</th>
                 <th>First Name</th>
                 <th>Last Name</th>
-                <th>Gender</th>
                 <th>Age</th>
                 </tr>`;
 
@@ -32,7 +31,6 @@ const getUsers = () => {
                 <td>${element[0]}</td>
                 <td>${element[1]}</td>
                 <td>${element[2]}</td>
-                <td>${element[3]}</td>
                 <td>${element[4]}</td>
                 </tr>`;
       });
